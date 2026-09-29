@@ -5,116 +5,896 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>VS Nova Clean | Residential & Commercial Cleaning</title>
 <meta name="description" content="Professional residential and commercial cleaning in Moncton, Dieppe, Riverview and surrounding areas." />
+
 <style>
-:root{--navy:#08295d;--navy2:#061f49;--cyan:#08a9df;--green:#16a34a;--ink:#0a2857;--muted:#5e718a;--line:#dfe8f0;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}.wrap{width:min(1410px,calc(100% - 48px));margin:auto}
-.topbar{background:var(--navy);color:#fff;font-weight:800;font-size:15px}.topbar .wrap{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:20px}.topbar a{color:#fff}nav{background:#fff;border-bottom:1px solid #e7edf3;position:sticky;top:0;z-index:20}.navin{height:96px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:block;overflow:hidden}.brand img{display:block;width:410px;max-width:38vw;height:auto;border:0;outline:0}.links{display:flex;align-items:center;gap:38px;font-weight:800}.quote{background:linear-gradient(135deg,#079bd7,#08afe1);color:#fff;padding:17px 30px;border-radius:999px;box-shadow:0 12px 30px rgba(8,169,223,.22)}
-.hero{min-height:680px;background:radial-gradient(circle at 15% 90%,rgba(97,218,119,.16),transparent 30%),radial-gradient(circle at 82% 12%,rgba(24,169,226,.15),transparent 32%),#fbfdff;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:70px;align-items:center;padding:72px 0}.eyebrow{display:flex;align-items:center;gap:12px;color:#119c51;font-weight:900;letter-spacing:.13em;font-size:15px}.eyebrow:before{content:"";width:45px;height:4px;background:#22a53b;border-radius:5px}.hero h1{font-size:clamp(52px,5.4vw,82px);line-height:.93;letter-spacing:-.055em;margin:28px 0 26px}.hero h1 span{display:block;background:linear-gradient(90deg,#079dd6,#18a55b);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.08;padding-bottom:.10em}.hero p{font-size:21px;line-height:1.65;color:var(--muted);max-width:700px}.actions{display:flex;gap:16px;margin:34px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:17px 26px;border-radius:999px;font-weight:900;font-size:18px}.btn.primary{background:linear-gradient(135deg,#079bd7,#08afe1);color:#fff}.btn.secondary{border:1px solid #d3e0ea;background:#fff;color:var(--navy)}.checks{display:flex;gap:30px;flex-wrap:wrap;font-weight:800;color:#4c617b}.checks span:before{content:"✓";color:#18a644;font-size:22px;margin-right:9px}.hero-card{position:relative;border-radius:36px;overflow:hidden;padding:0;box-shadow:0 28px 70px rgba(8,41,93,.18);background:#fff}.hero-card img{display:block;width:100%;height:auto;object-fit:contain;object-position:center}.float-quote{position:absolute;left:5%;right:5%;bottom:4%;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);padding:18px 22px;border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 12px 30px rgba(6,31,73,.13)}.float-quote strong{font-size:20px}.float-quote small{display:block;color:var(--muted);font-size:14px;margin-top:3px}.float-quote .btn{padding:14px 24px}
-.section{padding:90px 0}.section h2{text-align:center;font-size:46px;letter-spacing:-.04em;margin:0 0 14px}.section-lead{text-align:center;color:var(--muted);font-size:19px;max-width:760px;margin:0 auto 46px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{border:1px solid var(--line);border-radius:24px;padding:28px;background:#fff;box-shadow:0 14px 38px rgba(8,41,93,.06)}.icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#eaf8fd;font-size:24px}.card h3{font-size:21px;margin:18px 0 10px}.card p{color:var(--muted);line-height:1.6;margin:0}.commercial{background:var(--navy2);color:#fff}.commercial .section-lead{color:#c8d6e8}.commercial .card{background:#0c326c;border-color:#20487d;color:#fff}.commercial .card p{color:#c8d6e8}.area{text-align:center}.area .pill{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center}.area .pill span{padding:13px 20px;border-radius:999px;background:#f0f8fb;border:1px solid #dbeaf0;font-weight:800}.cta{margin:70px auto 90px;background:linear-gradient(135deg,#08295d,#0b4b8b);border-radius:32px;color:#fff;padding:52px;display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{text-align:left;margin:0 0 10px;font-size:40px}.cta p{margin:0;color:#d4e2f0;font-size:18px}.footer{background:#061f49;color:#d7e4f0;padding:34px 0}.footer .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}@media(max-width:980px){.topbar .wrap{justify-content:center;text-align:center;flex-wrap:wrap;padding:8px 0}.topbar .wrap span:last-child{display:none}.navin{height:auto;padding:16px 0}.brand img{max-width:280px;width:100%}.links a:not(.quote){display:none}.hero-grid{grid-template-columns:1fr;padding:55px 0}.hero h1{font-size:58px}.cards{grid-template-columns:repeat(2,1fr)}.cta{flex-direction:column;align-items:flex-start}}
-@media(max-width:600px){.wrap{width:min(100% - 28px,1410px)}.hero h1{font-size:47px}.hero p{font-size:18px}.actions{flex-direction:column}.btn{width:100%}.cards{grid-template-columns:1fr}.checks{gap:12px;flex-direction:column}.float-quote{position:static;border-radius:0}.section h2{font-size:38px}.cta{padding:34px 24px}.footer .wrap{flex-direction:column;text-align:center}}
-
-.quote-section{padding:72px 0;background:#f7fbfe}
-.quote-wrap{max-width:1050px;margin:0 auto;padding:0 24px}
-.quote-head{text-align:center;margin-bottom:30px}
-.quote-head h2{font-size:42px;color:var(--navy);margin:0 0 10px}
-.quote-head p{color:#64748b;font-size:18px;margin:0}
-.quote-form{background:#fff;border:1px solid #e4edf4;border-radius:24px;padding:32px;box-shadow:0 16px 45px rgba(7,43,92,.08)}
-.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.field{display:flex;flex-direction:column;gap:7px}
-.field.full{grid-column:1/-1}
-.field label{font-weight:700;color:var(--navy);font-size:14px}
-.field input,.field select,.field textarea{width:100%;box-sizing:border-box;border:1px solid #cfdde8;border-radius:12px;padding:13px 14px;font:inherit;color:#183153;background:#fff}
-.field textarea{min-height:115px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid rgba(15,169,220,.2);border-color:#0fa9dc}
-.quote-submit{margin-top:22px;display:flex;align-items:center;gap:15px;flex-wrap:wrap}
-.quote-submit button{border:0;border-radius:999px;padding:15px 26px;background:#0fa9dc;color:#fff;font-weight:800;font-size:16px;cursor:pointer}
-.quote-note{font-size:13px;color:#64748b}
-@media(max-width:720px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.quote-form{padding:22px}.quote-head h2{font-size:34px}}
-
-
-.quote-success{display:none;background:#fff;border:1px solid #d8e9e0;border-radius:24px;padding:46px 34px;text-align:center;box-shadow:0 16px 45px rgba(7,43,92,.08)}
-.quote-success.show{display:block}.quote-success .success-icon{width:70px;height:70px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;background:#e9f9ef;color:#16a34a;font-size:38px;font-weight:900}
-.quote-success h3{margin:0 0 12px;color:var(--navy);font-size:34px}.quote-success p{margin:8px auto;color:#64748b;font-size:17px;line-height:1.6;max-width:650px}
-.quote-success .success-call{display:inline-flex;margin-top:18px;padding:14px 24px;border-radius:999px;background:#0fa9dc;color:#fff;font-weight:800}
-.quote-error{display:none;margin-top:14px;padding:13px 16px;border-radius:12px;background:#fff1f2;color:#9f1239;font-size:14px;font-weight:700}.quote-error.show{display:block}
-.quote-submit button:disabled{opacity:.7;cursor:not-allowed}
-
-
-/* Mobile optimization only — desktop remains unchanged */
-@media(max-width:600px){
-  .topbar{font-size:13px}
-  .topbar .wrap{min-height:36px;padding:6px 0}
-  .navin{padding:10px 0;gap:12px}
-  .brand img{width:190px;max-width:52vw}
-  .links{gap:0}
-  .links .quote{padding:11px 16px;font-size:14px;white-space:nowrap}
-
-  .hero{min-height:auto}
-  .hero-grid{padding:38px 0 44px;gap:34px}
-  .eyebrow{font-size:12px;letter-spacing:.10em;gap:9px}
-  .eyebrow:before{width:30px;height:3px}
-  .hero h1{font-size:44px;margin:20px 0 18px;line-height:.98}
-  .hero h1 span{line-height:1.08;padding-bottom:.10em}
-  .hero p{font-size:17px;line-height:1.55;margin:0}
-  .actions{gap:11px;margin:24px 0}
-  .btn{padding:14px 20px;font-size:16px}
-  .checks{font-size:15px}
-
-  .section{padding:62px 0}
-  .section h2{font-size:34px;line-height:1.1;margin-bottom:12px}
-  .section-lead{font-size:17px;line-height:1.5;margin-bottom:30px}
-  .cards{gap:14px}
-  .card{padding:21px;border-radius:19px}
-  .icon{width:43px;height:43px;border-radius:13px;font-size:21px}
-  .card h3{font-size:19px;margin:14px 0 7px}
-  .card p{font-size:15px;line-height:1.5}
-
-  .area .pill{gap:8px}
-  .area .pill span{padding:10px 15px;font-size:14px}
-  .cta{margin:44px auto 60px;padding:28px 22px;border-radius:24px;gap:18px}
-  .cta h2{font-size:31px}
-  .cta p{font-size:16px}
-  .cta .actions{width:100%;margin:4px 0 0}
-
-  .quote-section{padding:56px 0}
-  .quote-wrap{padding:0 14px}
-  .quote-head{margin-bottom:24px}
-  .quote-head h2{font-size:32px}
-  .quote-head p{font-size:16px;line-height:1.5}
-  .quote-form{padding:19px;border-radius:20px}
-  .form-grid{gap:14px}
-  .quote-submit{margin-top:18px}
-  .quote-submit button{width:100%;padding:14px 20px}
-  .quote-note{text-align:center;width:100%;line-height:1.45}
-  .footer{padding:26px 0}
+:root{
+  --navy:#08295d;
+  --navy2:#061f49;
+  --cyan:#08a9df;
+  --green:#16a34a;
+  --ink:#0a2857;
+  --muted:#5e718a;
+  --line:#dfe8f0;
+  --white:#fff
 }
 
+*{box-sizing:border-box}
 
-/* Mobile fine-tuning — affects phones only */
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);
+  background:#fff
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+.wrap{
+  width:min(1410px,calc(100% - 48px));
+  margin:auto
+}
+
+/* TOP BAR */
+
+.topbar{
+  background:var(--navy);
+  color:#fff;
+  font-weight:800;
+  font-size:15px
+}
+
+.topbar .wrap{
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+
+.topbar a{color:#fff}
+
+/* NAVIGATION */
+
+nav{
+  background:#fff;
+  border-bottom:1px solid #e7edf3;
+  position:sticky;
+  top:0;
+  z-index:20
+}
+
+.navin{
+  min-height:108px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  padding:8px 0
+}
+
+/* LOGO FIX */
+
+.brand{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+  overflow:visible;
+  padding:4px 0
+}
+
+.brand img{
+  display:block;
+  width:410px;
+  max-width:38vw;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  object-position:left center;
+  border:0;
+  outline:0
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:38px;
+  font-weight:800
+}
+
+.quote{
+  background:linear-gradient(135deg,#079bd7,#08afe1);
+  color:#fff;
+  padding:17px 30px;
+  border-radius:999px;
+  box-shadow:0 12px 30px rgba(8,169,223,.22)
+}
+
+/* HERO */
+
+.hero{
+  min-height:680px;
+  background:
+    radial-gradient(circle at 15% 90%,rgba(97,218,119,.16),transparent 30%),
+    radial-gradient(circle at 82% 12%,rgba(24,169,226,.15),transparent 32%),
+    #fbfdff;
+  display:flex;
+  align-items:center
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.03fr .97fr;
+  gap:70px;
+  align-items:center;
+  padding:72px 0
+}
+
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#119c51;
+  font-weight:900;
+  letter-spacing:.13em;
+  font-size:15px
+}
+
+.eyebrow:before{
+  content:"";
+  width:45px;
+  height:4px;
+  background:#22a53b;
+  border-radius:5px
+}
+
+.hero h1{
+  font-size:clamp(52px,5.4vw,82px);
+  line-height:.93;
+  letter-spacing:-.055em;
+  margin:28px 0 26px
+}
+
+.hero h1 span{
+  display:block;
+  background:linear-gradient(90deg,#079dd6,#18a55b);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  line-height:1.08;
+  padding-bottom:.10em
+}
+
+.hero p{
+  font-size:21px;
+  line-height:1.65;
+  color:var(--muted);
+  max-width:700px
+}
+
+.actions{
+  display:flex;
+  gap:16px;
+  margin:34px 0
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:17px 26px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:18px
+}
+
+.btn.primary{
+  background:linear-gradient(135deg,#079bd7,#08afe1);
+  color:#fff
+}
+
+.btn.secondary{
+  border:1px solid #d3e0ea;
+  background:#fff;
+  color:var(--navy)
+}
+
+.checks{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  font-weight:800;
+  color:#4c617b
+}
+
+.checks span:before{
+  content:"✓";
+  color:#18a644;
+  font-size:22px;
+  margin-right:9px
+}
+
+/* HERO IMAGE FIX */
+
+.hero-card{
+  position:relative;
+  width:100%;
+  border-radius:36px;
+  overflow:visible;
+  padding:0;
+  background:transparent;
+  box-shadow:none
+}
+
+.hero-card a{
+  display:block;
+  width:100%;
+  line-height:0
+}
+
+.hero-card img{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  object-position:center center;
+  border-radius:36px;
+  box-shadow:0 28px 70px rgba(8,41,93,.18)
+}
+
+/* SECTIONS */
+
+.section{
+  padding:90px 0
+}
+
+.section h2{
+  text-align:center;
+  font-size:46px;
+  letter-spacing:-.04em;
+  margin:0 0 14px
+}
+
+.section-lead{
+  text-align:center;
+  color:var(--muted);
+  font-size:19px;
+  max-width:760px;
+  margin:0 auto 46px
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+  background:#fff;
+  box-shadow:0 14px 38px rgba(8,41,93,.06)
+}
+
+.icon{
+  width:48px;
+  height:48px;
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  background:#eaf8fd;
+  font-size:24px
+}
+
+.card h3{
+  font-size:21px;
+  margin:18px 0 10px
+}
+
+.card p{
+  color:var(--muted);
+  line-height:1.6;
+  margin:0
+}
+
+/* COMMERCIAL */
+
+.commercial{
+  background:var(--navy2);
+  color:#fff
+}
+
+.commercial .section-lead{
+  color:#c8d6e8
+}
+
+.commercial .card{
+  background:#0c326c;
+  border-color:#20487d;
+  color:#fff
+}
+
+.commercial .card p{
+  color:#c8d6e8
+}
+
+/* SERVICE AREA */
+
+.area{
+  text-align:center
+}
+
+.area .pill{
+  display:inline-flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center
+}
+
+.area .pill span{
+  padding:13px 20px;
+  border-radius:999px;
+  background:#f0f8fb;
+  border:1px solid #dbeaf0;
+  font-weight:800
+}
+
+/* CTA */
+
+.cta{
+  margin:70px auto 90px;
+  background:linear-gradient(135deg,#08295d,#0b4b8b);
+  border-radius:32px;
+  color:#fff;
+  padding:52px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px
+}
+
+.cta h2{
+  text-align:left;
+  margin:0 0 10px;
+  font-size:40px
+}
+
+.cta p{
+  margin:0;
+  color:#d4e2f0;
+  font-size:18px
+}
+
+/* QUOTE */
+
+.quote-section{
+  padding:72px 0;
+  background:#f7fbfe
+}
+
+.quote-wrap{
+  max-width:1050px;
+  margin:0 auto;
+  padding:0 24px
+}
+
+.quote-head{
+  text-align:center;
+  margin-bottom:30px
+}
+
+.quote-head h2{
+  font-size:42px;
+  color:var(--navy);
+  margin:0 0 10px
+}
+
+.quote-head p{
+  color:#64748b;
+  font-size:18px;
+  margin:0
+}
+
+.quote-form{
+  background:#fff;
+  border:1px solid #e4edf4;
+  border-radius:24px;
+  padding:32px;
+  box-shadow:0 16px 45px rgba(7,43,92,.08)
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:7px
+}
+
+.field.full{
+  grid-column:1/-1
+}
+
+.field label{
+  font-weight:700;
+  color:var(--navy);
+  font-size:14px
+}
+
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid #cfdde8;
+  border-radius:12px;
+  padding:13px 14px;
+  font:inherit;
+  color:#183153;
+  background:#fff
+}
+
+.field textarea{
+  min-height:115px;
+  resize:vertical
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline:2px solid rgba(15,169,220,.2);
+  border-color:#0fa9dc
+}
+
+.quote-submit{
+  margin-top:22px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap
+}
+
+.quote-submit button{
+  border:0;
+  border-radius:999px;
+  padding:15px 26px;
+  background:#0fa9dc;
+  color:#fff;
+  font-weight:800;
+  font-size:16px;
+  cursor:pointer
+}
+
+.quote-note{
+  font-size:13px;
+  color:#64748b
+}
+
+/* SUCCESS */
+
+.quote-success{
+  display:none;
+  background:#fff;
+  border:1px solid #d8e9e0;
+  border-radius:24px;
+  padding:46px 34px;
+  text-align:center;
+  box-shadow:0 16px 45px rgba(7,43,92,.08)
+}
+
+.quote-success.show{
+  display:block
+}
+
+.quote-success .success-icon{
+  width:70px;
+  height:70px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#e9f9ef;
+  color:#16a34a;
+  font-size:38px;
+  font-weight:900
+}
+
+.quote-success h3{
+  margin:0 0 12px;
+  color:var(--navy);
+  font-size:34px
+}
+
+.quote-success p{
+  margin:8px auto;
+  color:#64748b;
+  font-size:17px;
+  line-height:1.6;
+  max-width:650px
+}
+
+.quote-success .success-call{
+  display:inline-flex;
+  margin-top:18px;
+  padding:14px 24px;
+  border-radius:999px;
+  background:#0fa9dc;
+  color:#fff;
+  font-weight:800
+}
+
+.quote-error{
+  display:none;
+  margin-top:14px;
+  padding:13px 16px;
+  border-radius:12px;
+  background:#fff1f2;
+  color:#9f1239;
+  font-size:14px;
+  font-weight:700
+}
+
+.quote-error.show{
+  display:block
+}
+
+.quote-submit button:disabled{
+  opacity:.7;
+  cursor:not-allowed
+}
+
+/* FOOTER */
+
+.footer{
+  background:#061f49;
+  color:#d7e4f0;
+  padding:34px 0
+}
+
+.footer .wrap{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center
+}
+
+/* TABLET */
+
+@media(max-width:980px){
+
+  .topbar .wrap{
+    justify-content:center;
+    text-align:center;
+    flex-wrap:wrap;
+    padding:8px 0
+  }
+
+  .topbar .wrap span:last-child{
+    display:none
+  }
+
+  .navin{
+    min-height:90px;
+    padding:12px 0
+  }
+
+  .brand img{
+    max-width:280px;
+    width:100%
+  }
+
+  .links a:not(.quote){
+    display:none
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    padding:55px 0
+  }
+
+  .hero h1{
+    font-size:58px
+  }
+
+  .hero-card{
+    max-width:760px;
+    margin:0 auto
+  }
+
+  .cards{
+    grid-template-columns:repeat(2,1fr)
+  }
+
+  .cta{
+    flex-direction:column;
+    align-items:flex-start
+  }
+}
+
+/* FORM TABLET */
+
+@media(max-width:720px){
+
+  .form-grid{
+    grid-template-columns:1fr
+  }
+
+  .field.full{
+    grid-column:auto
+  }
+
+  .quote-form{
+    padding:22px
+  }
+
+  .quote-head h2{
+    font-size:34px
+  }
+}
+
+/* MOBILE */
+
 @media(max-width:600px){
-  /* More compact sticky header */
-  .navin{padding:7px 0;min-height:68px}
-  .brand img{width:175px;max-width:50vw}
-  .links .quote{padding:10px 14px;font-size:13px}
 
-  /* Reduce unnecessary vertical whitespace */
-  .section{padding:52px 0}
-  .commercial.section{padding:54px 0}
-  .area.section{padding:54px 0 0}
-  .cta{margin:38px auto 42px}
-  .quote-section{padding:46px 0 52px}
+  .wrap{
+    width:min(100% - 28px,1410px)
+  }
 
-  /* Slightly tighter cards */
-  .cards{gap:12px}
-  .card{padding:19px}
-  .commercial .card{padding:19px}
+  .topbar{
+    font-size:13px
+  }
 
-  /* CTA buttons stay clear and compact */
-  .cta{padding:26px 20px}
-  .cta .actions{gap:10px}
-  .cta .btn{min-height:50px}
+  .topbar .wrap{
+    min-height:36px;
+    padding:6px 0
+  }
 
-  /* Fix iPhone/Safari date input height */
+  .navin{
+    padding:8px 0;
+    min-height:74px;
+    gap:12px
+  }
+
+  .brand{
+    padding:3px 0;
+    overflow:visible
+  }
+
+  .brand img{
+    width:185px;
+    max-width:52vw;
+    height:auto;
+    max-height:none;
+    object-fit:contain
+  }
+
+  .links{
+    gap:0
+  }
+
+  .links .quote{
+    padding:10px 14px;
+    font-size:13px;
+    white-space:nowrap
+  }
+
+  .hero{
+    min-height:auto
+  }
+
+  .hero-grid{
+    padding:38px 0 44px;
+    gap:34px
+  }
+
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:.10em;
+    gap:9px
+  }
+
+  .eyebrow:before{
+    width:30px;
+    height:3px
+  }
+
+  .hero h1{
+    font-size:44px;
+    margin:20px 0 18px;
+    line-height:.98
+  }
+
+  .hero h1 span{
+    line-height:1.08;
+    padding-bottom:.10em
+  }
+
+  .hero p{
+    font-size:17px;
+    line-height:1.55;
+    margin:0
+  }
+
+  .actions{
+    flex-direction:column;
+    gap:11px;
+    margin:24px 0
+  }
+
+  .btn{
+    width:100%;
+    padding:14px 20px;
+    font-size:16px
+  }
+
+  .checks{
+    gap:12px;
+    flex-direction:column;
+    font-size:15px
+  }
+
+  /* Keep complete hero artwork visible on phones */
+  .hero-card{
+    width:100%;
+    max-width:100%;
+    overflow:visible;
+    border-radius:24px
+  }
+
+  .hero-card a{
+    display:block;
+    width:100%
+  }
+
+  .hero-card img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+    object-position:center center;
+    border-radius:24px
+  }
+
+  .section{
+    padding:52px 0
+  }
+
+  .commercial.section{
+    padding:54px 0
+  }
+
+  .area.section{
+    padding:54px 0 0
+  }
+
+  .section h2{
+    font-size:34px;
+    line-height:1.1;
+    margin-bottom:12px
+  }
+
+  .section-lead{
+    font-size:17px;
+    line-height:1.5;
+    margin-bottom:30px
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+    gap:12px
+  }
+
+  .card{
+    padding:19px;
+    border-radius:19px
+  }
+
+  .commercial .card{
+    padding:19px
+  }
+
+  .icon{
+    width:43px;
+    height:43px;
+    border-radius:13px;
+    font-size:21px
+  }
+
+  .card h3{
+    font-size:19px;
+    margin:14px 0 7px
+  }
+
+  .card p{
+    font-size:15px;
+    line-height:1.5
+  }
+
+  .area .pill{
+    gap:8px
+  }
+
+  .area .pill span{
+    padding:10px 15px;
+    font-size:14px
+  }
+
+  .cta{
+    margin:38px auto 42px;
+    padding:26px 20px;
+    border-radius:24px;
+    gap:18px
+  }
+
+  .cta h2{
+    font-size:31px
+  }
+
+  .cta p{
+    font-size:16px
+  }
+
+  .cta .actions{
+    width:100%;
+    margin:4px 0 0;
+    gap:10px
+  }
+
+  .cta .btn{
+    min-height:50px
+  }
+
+  .quote-section{
+    padding:46px 0 52px
+  }
+
+  .quote-wrap{
+    padding:0 14px
+  }
+
+  .quote-head{
+    margin-bottom:24px
+  }
+
+  .quote-head h2{
+    font-size:32px
+  }
+
+  .quote-head p{
+    font-size:16px;
+    line-height:1.5
+  }
+
+  .quote-form{
+    padding:19px;
+    border-radius:20px
+  }
+
+  .form-grid{
+    gap:14px
+  }
+
+  .field input,
+  .field select{
+    min-height:50px
+  }
+
+  .field textarea{
+    min-height:105px
+  }
+
   .field input[type="date"]{
     display:block;
     width:100%;
@@ -123,116 +903,612 @@
     padding:10px 14px;
     line-height:28px;
     -webkit-appearance:none;
-    appearance:none;
-  }
-  .field input[type="date"]::-webkit-date-and-time-value{
-    text-align:left;
-    min-height:28px;
+    appearance:none
   }
 
-  /* Keep form compact */
-  .field input,.field select{min-height:50px}
-  .field textarea{min-height:105px}
+  .field input[type="date"]::-webkit-date-and-time-value{
+    text-align:left;
+    min-height:28px
+  }
+
+  .quote-submit{
+    margin-top:18px
+  }
+
+  .quote-submit button{
+    width:100%;
+    padding:14px 20px
+  }
+
+  .quote-note{
+    text-align:center;
+    width:100%;
+    line-height:1.45
+  }
+
+  .footer{
+    padding:26px 0
+  }
+
+  .footer .wrap{
+    flex-direction:column;
+    text-align:center
+  }
 }
 
 </style>
 </head>
-<body>
-<div class="topbar"><div class="wrap"><span>Serving Moncton, Dieppe, Riverview &amp; surrounding areas</span><span><a href="tel:+16479130415">+1 (647) 913-0415</a> &nbsp; • &nbsp; <a href="mailto:cleaning@vsnova.ca">cleaning@vsnova.ca</a></span></div></div>
-<nav><div class="wrap navin"><a class="brand" href="#"><img src="assets/vsnova-logo-final.png?v=10" alt="VS Nova Clean"></a><div class="links"><a href="#services">Services</a><a href="#commercial">Commercial</a><a href="#area">Service Area</a><a class="quote" href="#quote">Get a Free Quote</a></div></div></nav>
-<main>
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">PROFESSIONAL LOCAL CLEANING</div><h1>Cleaner Spaces.<span>Brighter Days.</span></h1><p>Reliable residential and commercial cleaning designed around your space, schedule and priorities. Serving homes and businesses across Greater Moncton.</p><div class="actions"><a class="btn primary" href="#quote">Get a Free Quote</a><a class="btn secondary" href="tel:+16479130415">Call +1 (647) 913-0415</a></div><div class="checks"><span>Flexible Scheduling</span><span>Detail Focused</span><span>Local Service</span></div></div><div class="hero-card"><a href="#quote" aria-label="Request a cleaning quote"><img src="assets/hero-card-final-v7.png?v=10" alt="VS Nova Clean residential and commercial cleaning services"></a></div></div></section>
-<section class="section" id="services"><div class="wrap"><h2>Cleaning services built around you</h2><p class="section-lead">From recurring home cleaning to detailed move-out service, we make it easy to keep your space looking its best.</p><div class="cards"><div class="card"><div class="icon">⌂</div><h3>Residential Cleaning</h3><p>Reliable recurring or one-time cleaning for apartments, condos and homes.</p></div><div class="card"><div class="icon">✦</div><h3>Deep Cleaning</h3><p>Extra attention to buildup, details and areas that need a more intensive clean.</p></div><div class="card"><div class="icon">□</div><h3>Move-In / Move-Out</h3><p>Detailed cleaning to help prepare a property for the next chapter.</p></div><div class="card"><div class="icon">▦</div><h3>Office Cleaning</h3><p>Professional cleaning solutions that help workplaces feel fresh and welcoming.</p></div></div></div></section>
-<section class="section commercial" id="commercial"><div class="wrap"><h2>Commercial cleaning that works around your business</h2><p class="section-lead">Flexible service for offices and commercial spaces, with schedules tailored to your operation.</p><div class="cards"><div class="card"><h3>Offices</h3><p>Routine cleaning for workspaces, common areas, kitchens and washrooms.</p></div><div class="card"><h3>Retail &amp; Commercial</h3><p>Consistent cleaning focused on presentation, high-touch areas and customer-facing spaces.</p></div><div class="card"><h3>Custom Schedules</h3><p>Weekly, bi-weekly and custom service plans based on your space and priorities.</p></div><div class="card"><h3>Local Support</h3><p>Responsive service for businesses throughout Greater Moncton.</p></div></div></div></section>
-<section class="section area" id="area"><div class="wrap"><h2>Proudly serving Greater Moncton</h2><p class="section-lead">Local cleaning service for homes and businesses throughout the region.</p><div class="pill"><span>Moncton</span><span>Dieppe</span><span>Riverview</span><span>Surrounding Areas</span></div><div class="cta" id="quote"><div><h2>Ready for a cleaner space?</h2><p>Contact VS Nova Clean today for a free, no-obligation quote.</p></div><div class="actions"><a class="btn primary" href="mailto:cleaning@vsnova.ca?subject=Free%20Cleaning%20Quote">Get a Free Quote</a><a class="btn secondary" href="tel:+16479130415">+1 (647) 913-0415</a></div></div></div></section>
-</main>
 
-<section class="quote-section" id="quote">
-  <div class="quote-wrap">
-    <div class="quote-head">
-      <h2>Get Your Free Quote</h2>
-      <p>Tell us about your space and cleaning needs. We'll get back to you with a personalized quote.</p>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Serving Moncton, Dieppe, Riverview &amp; surrounding areas</span>
+    <span>
+      <a href="tel:+16479130415">+1 (647) 913-0415</a>
+      &nbsp; • &nbsp;
+      <a href="mailto:cleaning@vsnova.ca">cleaning@vsnova.ca</a>
+    </span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap navin">
+
+    <a class="brand" href="#">
+      <img src="assets/vsnova-logo-final.png?v=11" alt="VS Nova Clean">
+    </a>
+
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#area">Service Area</a>
+      <a class="quote" href="#quote-form-section">Get a Free Quote</a>
     </div>
-    <form class="quote-form" id="quoteForm">
-      <div class="form-grid">
-        <div class="field"><label for="name">Full Name *</label><input id="name" name="name" required></div>
-        <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" required></div>
-        <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required></div>
-        <div class="field"><label for="area">City / Area *</label><select id="area" name="area" required><option value="">Select</option><option>Moncton</option><option>Dieppe</option><option>Riverview</option><option>Surrounding Area</option></select></div>
-        <div class="field"><label for="service">Cleaning Service *</label><select id="service" name="service" required><option value="">Select</option><option>Residential Cleaning</option><option>Commercial Cleaning</option><option>Office Cleaning</option><option>Deep Cleaning</option><option>Move-In / Move-Out Cleaning</option></select></div>
-        <div class="field"><label for="frequency">Frequency</label><select id="frequency" name="frequency"><option>One-Time</option><option>Weekly</option><option>Bi-Weekly</option><option>Monthly</option><option>Not Sure Yet</option></select></div>
-        <div class="field"><label for="bedrooms">Bedrooms</label><select id="bedrooms" name="bedrooms"><option>N/A</option><option>Studio</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
-        <div class="field"><label for="bathrooms">Bathrooms</label><select id="bathrooms" name="bathrooms"><option>N/A</option><option>1</option><option>1.5</option><option>2</option><option>2.5</option><option>3</option><option>4+</option></select></div>
-        <div class="field full"><label for="address">Service Address</label><input id="address" name="address" placeholder="Street address (optional for initial quote)"></div>
-        <div class="field"><label for="date">Preferred Date</label><input id="date" name="date" type="date"></div>
-        <div class="field"><label for="size">Approx. Size (sq. ft.)</label><input id="size" name="size" type="number" min="0" placeholder="e.g. 1200"></div>
-        <div class="field full"><label for="notes">Anything else we should know?</label><textarea id="notes" name="notes" placeholder="Tell us about pets, special requests, areas needing extra attention, access details, etc."></textarea></div>
+
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        PROFESSIONAL LOCAL CLEANING
       </div>
-      <div class="quote-submit">
-        <button type="submit">Request My Free Quote</button>
-        <span class="quote-note">No obligation. Your information is used only to prepare and respond to your quote request.</span>
+
+      <h1>
+        Cleaner Spaces.
+        <span>Brighter Days.</span>
+      </h1>
+
+      <p>
+        Reliable residential and commercial cleaning designed around your space,
+        schedule and priorities. Serving homes and businesses across Greater Moncton.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#quote-form-section">Get a Free Quote</a>
+        <a class="btn secondary" href="tel:+16479130415">
+          Call +1 (647) 913-0415
+        </a>
       </div>
-      <div class="quote-error" id="quoteError" role="alert"></div>
-    </form>
-    <div class="quote-success" id="quoteSuccess" role="status" aria-live="polite">
-      <div class="success-icon">✓</div>
-      <h3>Thank you, <span id="successName">there</span>!</h3>
-      <p>Your quote request has been received successfully.</p>
-      <p>Our team will review your cleaning needs and contact you shortly with the next steps.</p>
-      <a class="success-call" href="tel:+16479130415">Need immediate assistance? Call +1 (647) 913-0415</a>
+
+      <div class="checks">
+        <span>Flexible Scheduling</span>
+        <span>Detail Focused</span>
+        <span>Local Service</span>
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+      <a href="#quote-form-section" aria-label="Request a cleaning quote">
+        <img
+          src="assets/hero-card-final-v7.png?v=11"
+          alt="VS Nova Clean residential and commercial cleaning services"
+        >
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+
+    <h2>Cleaning services built around you</h2>
+
+    <p class="section-lead">
+      From recurring home cleaning to detailed move-out service,
+      we make it easy to keep your space looking its best.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">⌂</div>
+        <h3>Residential Cleaning</h3>
+        <p>
+          Reliable recurring or one-time cleaning for apartments,
+          condos and homes.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✦</div>
+        <h3>Deep Cleaning</h3>
+        <p>
+          Extra attention to buildup, details and areas that need
+          a more intensive clean.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">□</div>
+        <h3>Move-In / Move-Out</h3>
+        <p>
+          Detailed cleaning to help prepare a property for the next chapter.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">▦</div>
+        <h3>Office Cleaning</h3>
+        <p>
+          Professional cleaning solutions that help workplaces
+          feel fresh and welcoming.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<footer class="footer"><div class="wrap"><div><strong>VS NOVA CLEAN</strong> · Residential &amp; Commercial Cleaning</div><div>Moncton · Dieppe · Riverview</div></div></footer>
+<section class="section commercial" id="commercial">
+  <div class="wrap">
+
+    <h2>Commercial cleaning that works around your business</h2>
+
+    <p class="section-lead">
+      Flexible service for offices and commercial spaces,
+      with schedules tailored to your operation.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Offices</h3>
+        <p>
+          Routine cleaning for workspaces, common areas,
+          kitchens and washrooms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Retail &amp; Commercial</h3>
+        <p>
+          Consistent cleaning focused on presentation,
+          high-touch areas and customer-facing spaces.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Custom Schedules</h3>
+        <p>
+          Weekly, bi-weekly and custom service plans based
+          on your space and priorities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Local Support</h3>
+        <p>
+          Responsive service for businesses throughout Greater Moncton.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section area" id="area">
+  <div class="wrap">
+
+    <h2>Proudly serving Greater Moncton</h2>
+
+    <p class="section-lead">
+      Local cleaning service for homes and businesses throughout the region.
+    </p>
+
+    <div class="pill">
+      <span>Moncton</span>
+      <span>Dieppe</span>
+      <span>Riverview</span>
+      <span>Surrounding Areas</span>
+    </div>
+
+    <div class="cta">
+
+      <div>
+        <h2>Ready for a cleaner space?</h2>
+        <p>
+          Contact VS Nova Clean today for a free, no-obligation quote.
+        </p>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" href="#quote-form-section">
+          Get a Free Quote
+        </a>
+
+        <a class="btn secondary" href="tel:+16479130415">
+          +1 (647) 913-0415
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<section class="quote-section" id="quote-form-section">
+
+  <div class="quote-wrap">
+
+    <div class="quote-head">
+
+      <h2>Get Your Free Quote</h2>
+
+      <p>
+        Tell us about your space and cleaning needs.
+        We'll get back to you with a personalized quote.
+      </p>
+
+    </div>
+
+    <form class="quote-form" id="quoteForm">
+
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone *</label>
+          <input id="phone" name="phone" type="tel" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="field">
+          <label for="areaSelect">City / Area *</label>
+
+          <select id="areaSelect" name="area" required>
+            <option value="">Select</option>
+            <option>Moncton</option>
+            <option>Dieppe</option>
+            <option>Riverview</option>
+            <option>Surrounding Area</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="service">Cleaning Service *</label>
+
+          <select id="service" name="service" required>
+            <option value="">Select</option>
+            <option>Residential Cleaning</option>
+            <option>Commercial Cleaning</option>
+            <option>Office Cleaning</option>
+            <option>Deep Cleaning</option>
+            <option>Move-In / Move-Out Cleaning</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="frequency">Frequency</label>
+
+          <select id="frequency" name="frequency">
+            <option>One-Time</option>
+            <option>Weekly</option>
+            <option>Bi-Weekly</option>
+            <option>Monthly</option>
+            <option>Not Sure Yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="bedrooms">Bedrooms</label>
+
+          <select id="bedrooms" name="bedrooms">
+            <option>N/A</option>
+            <option>Studio</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="bathrooms">Bathrooms</label>
+
+          <select id="bathrooms" name="bathrooms">
+            <option>N/A</option>
+            <option>1</option>
+            <option>1.5</option>
+            <option>2</option>
+            <option>2.5</option>
+            <option>3</option>
+            <option>4+</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="address">Service Address</label>
+
+          <input
+            id="address"
+            name="address"
+            placeholder="Street address (optional for initial quote)"
+          >
+        </div>
+
+        <div class="field">
+          <label for="date">Preferred Date</label>
+          <input id="date" name="date" type="date">
+        </div>
+
+        <div class="field">
+          <label for="size">Approx. Size (sq. ft.)</label>
+
+          <input
+            id="size"
+            name="size"
+            type="number"
+            min="0"
+            placeholder="e.g. 1200"
+          >
+        </div>
+
+        <div class="field full">
+
+          <label for="notes">
+            Anything else we should know?
+          </label>
+
+          <textarea
+            id="notes"
+            name="notes"
+            placeholder="Tell us about pets, special requests, areas needing extra attention, access details, etc."
+          ></textarea>
+
+        </div>
+
+      </div>
+
+      <div class="quote-submit">
+
+        <button type="submit">
+          Request My Free Quote
+        </button>
+
+        <span class="quote-note">
+          No obligation. Your information is used only to prepare
+          and respond to your quote request.
+        </span>
+
+      </div>
+
+      <div
+        class="quote-error"
+        id="quoteError"
+        role="alert"
+      ></div>
+
+    </form>
+
+    <div
+      class="quote-success"
+      id="quoteSuccess"
+      role="status"
+      aria-live="polite"
+    >
+
+      <div class="success-icon">✓</div>
+
+      <h3>
+        Thank you,
+        <span id="successName">there</span>!
+      </h3>
+
+      <p>
+        Your quote request has been received successfully.
+      </p>
+
+      <p>
+        Our team will review your cleaning needs and contact
+        you shortly with the next steps.
+      </p>
+
+      <a
+        class="success-call"
+        href="tel:+16479130415"
+      >
+        Need immediate assistance? Call +1 (647) 913-0415
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+
+  <div class="wrap">
+
+    <div>
+      <strong>VS NOVA CLEAN</strong>
+      · Residential &amp; Commercial Cleaning
+    </div>
+
+    <div>
+      Moncton · Dieppe · Riverview
+    </div>
+
+  </div>
+
+</footer>
 
 <script>
+
 const quoteForm = document.getElementById('quoteForm');
-const quoteButton = quoteForm.querySelector('button[type="submit"]');
-const quoteNote = quoteForm.querySelector('.quote-note');
-const quoteSuccess = document.getElementById('quoteSuccess');
-const successName = document.getElementById('successName');
-const quoteError = document.getElementById('quoteError');
-const originalButtonText = quoteButton.textContent;
+
+const quoteButton =
+  quoteForm.querySelector('button[type="submit"]');
+
+const quoteNote =
+  quoteForm.querySelector('.quote-note');
+
+const quoteSuccess =
+  document.getElementById('quoteSuccess');
+
+const successName =
+  document.getElementById('successName');
+
+const quoteError =
+  document.getElementById('quoteError');
+
+const originalButtonText =
+  quoteButton.textContent;
 
 quoteForm.addEventListener('submit', async function(e) {
+
   e.preventDefault();
+
   if (quoteButton.disabled) return;
+
   const f = new FormData(this);
-  const customerName = (f.get('name') || '').trim();
+
+  const customerName =
+    (f.get('name') || '').trim();
+
   const payload = {
-    name: customerName, phone: f.get('phone') || '', email: f.get('email') || '',
-    area: f.get('area') || '', service: f.get('service') || '', propertyType: '',
-    frequency: f.get('frequency') || '', bedrooms: f.get('bedrooms') || '',
-    bathrooms: f.get('bathrooms') || '', address: f.get('address') || '',
-    preferredDate: f.get('date') || '', size: f.get('size') || '',
+
+    name: customerName,
+
+    phone: f.get('phone') || '',
+
+    email: f.get('email') || '',
+
+    area: f.get('area') || '',
+
+    service: f.get('service') || '',
+
+    propertyType: '',
+
+    frequency: f.get('frequency') || '',
+
+    bedrooms: f.get('bedrooms') || '',
+
+    bathrooms: f.get('bathrooms') || '',
+
+    address: f.get('address') || '',
+
+    preferredDate: f.get('date') || '',
+
+    size: f.get('size') || '',
+
     message: f.get('notes') || ''
+
   };
+
   quoteError.classList.remove('show');
+
   quoteButton.disabled = true;
+
   quoteButton.textContent = 'Sending...';
-  quoteNote.textContent = 'Sending your request securely...';
+
+  quoteNote.textContent =
+    'Sending your request securely...';
+
   try {
-    const response = await fetch('https://vsnova-clean-quote.vitor-cattony.workers.dev/', {
-      method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)
-    });
+
+    const response = await fetch(
+      'https://vsnova-clean-quote.vitor-cattony.workers.dev/',
+      {
+        method:'POST',
+
+        headers:{
+          'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify(payload)
+      }
+    );
+
     let result = {};
-    try { result = await response.json(); } catch (_) {}
-    if (!response.ok || result.success !== true) throw new Error(result.message || 'Unable to send quote request.');
+
+    try {
+      result = await response.json();
+    } catch (_) {}
+
+    if (!response.ok || result.success !== true) {
+
+      throw new Error(
+        result.message ||
+        'Unable to send quote request.'
+      );
+
+    }
+
     quoteForm.reset();
-    successName.textContent = customerName || 'there';
+
+    successName.textContent =
+      customerName || 'there';
+
     quoteForm.style.display = 'none';
+
     quoteSuccess.classList.add('show');
-    quoteSuccess.scrollIntoView({behavior:'smooth',block:'center'});
+
+    quoteSuccess.scrollIntoView({
+      behavior:'smooth',
+      block:'center'
+    });
+
   } catch (error) {
+
     console.error(error);
+
     quoteButton.disabled = false;
-    quoteButton.textContent = originalButtonText;
-    quoteNote.textContent = 'No obligation. Your information is used only to prepare and respond to your quote request.';
-    quoteError.textContent = 'We could not send your request. Please call +1 (647) 913-0415 or email cleaning@vsnova.ca.';
+
+    quoteButton.textContent =
+      originalButtonText;
+
+    quoteNote.textContent =
+      'No obligation. Your information is used only to prepare and respond to your quote request.';
+
+    quoteError.textContent =
+      'We could not send your request. Please call +1 (647) 913-0415 or email cleaning@vsnova.ca.';
+
     quoteError.classList.add('show');
+
   }
+
 });
+
 </script>
-<!-- Vercel redeploy -->
-</body></html>
+
+</body>
+</html>
