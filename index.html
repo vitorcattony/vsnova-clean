@@ -935,7 +935,57 @@ nav{
     text-align:center
   }
 }
+/* =========================================================
+   HEADER LOGO + ANCHOR SCROLL FIX
+   ========================================================= */
 
+/* Keep the complete logo visible inside the header */
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 440px;
+  max-height: 76px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Leave room for the fixed/sticky header when using menu links */
+#services,
+#commercial,
+#service-area,
+section[id] {
+  scroll-margin-top: 155px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .brand img {
+    max-width: 360px;
+    max-height: 70px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .brand img {
+    max-width: 260px;
+    max-height: 60px;
+  }
+
+  #services,
+  #commercial,
+  #service-area,
+  section[id] {
+    scroll-margin-top: 120px;
+  }
+}
 </style>
 </head>
 
